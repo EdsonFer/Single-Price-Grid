@@ -1,0 +1,203 @@
+/* Primary */
+/* Neutral colors */
+/* Default fonts */
+/* line 12, ../../Desktop/price-grid-component/sass/style.scss */
+:root {
+  font-size: 16px;
+}
+
+/* line 16, ../../Desktop/price-grid-component/sass/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+/* line 23, ../../Desktop/price-grid-component/sass/style.scss */
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* line 34, ../../Desktop/price-grid-component/sass/style.scss */
+.main {
+  height: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "main__community main__community" "main__subscribe main__why-us";
+  justify-content: center;
+  align-content: center;
+}
+
+@media (max-width: 940px) {
+  /* line 34, ../../Desktop/price-grid-component/sass/style.scss */
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main__community" "main__subscribe" "main__why-us";
+  }
+}
+
+/* line 53, ../../Desktop/price-grid-component/sass/style.scss */
+.main__community {
+  grid-area: main__community;
+  padding: 5em 2em 5em 5em;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 2px -2px 17px 0px #98a6bd;
+}
+
+/* line 59, ../../Desktop/price-grid-component/sass/style.scss */
+.main__community__title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #2ab2af;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 940px) {
+  /* line 59, ../../Desktop/price-grid-component/sass/style.scss */
+  .main__community__title {
+    font-size: 40px;
+  }
+}
+
+/* line 70, ../../Desktop/price-grid-component/sass/style.scss */
+.main__community__subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #c0df34;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 940px) {
+  /* line 70, ../../Desktop/price-grid-component/sass/style.scss */
+  .main__community__subtitle {
+    font-size: 30px;
+  }
+}
+
+/* line 81, ../../Desktop/price-grid-component/sass/style.scss */
+.main__community__text {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #98a6bd;
+}
+
+@media (max-width: 940px) {
+  /* line 81, ../../Desktop/price-grid-component/sass/style.scss */
+  .main__community__text {
+    font-size: 26px;
+  }
+}
+
+/* line 93, ../../Desktop/price-grid-component/sass/style.scss */
+.main__subscribe {
+  background-color: #2ab2af;
+  grid-area: main__subscribe;
+  border-radius: 0 0 0 20px;
+  box-shadow: -2px 6px 17px 0px #98a6bd;
+  padding: 1.5em 3em 5em 3em;
+}
+
+@media (max-width: 940px) {
+  /* line 93, ../../Desktop/price-grid-component/sass/style.scss */
+  .main__subscribe {
+    font-size: 30px;
+    border-radius: 0;
+  }
+}
+
+/* line 105, ../../Desktop/price-grid-component/sass/style.scss */
+.main__subscribe__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #e5eff5;
+  margin-top: 1em;
+}
+
+/* line 112, ../../Desktop/price-grid-component/sass/style.scss */
+.main__subscribe__price {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgba(229, 239, 245, 0.5);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+
+/* line 120, ../../Desktop/price-grid-component/sass/style.scss */
+.main__subscribe__price > span {
+  font-size: 45px;
+  color: #e5eff5;
+  margin-right: 0.5em;
+}
+
+/* line 127, ../../Desktop/price-grid-component/sass/style.scss */
+.main__subscribe__text {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgba(229, 239, 245, 0.8);
+}
+
+/* line 133, ../../Desktop/price-grid-component/sass/style.scss */
+.main__subscribe__btn {
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 700;
+  background-color: #c0df34;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin-top: 1.5em;
+  padding: 0.5em 5em;
+}
+
+@media (max-width: 940px) {
+  /* line 133, ../../Desktop/price-grid-component/sass/style.scss */
+  .main__subscribe__btn {
+    font-size: 26px;
+  }
+}
+
+/* line 150, ../../Desktop/price-grid-component/sass/style.scss */
+.main__why-us {
+  background-color: rgba(42, 178, 175, 0.8);
+  grid-area: main__why-us;
+  border-radius: 0 0 20px 0;
+  box-shadow: 4px 6px 17px 0px #98a6bd;
+  padding: 1.5em 5em 5em 5em;
+}
+
+@media (max-width: 940px) {
+  /* line 150, ../../Desktop/price-grid-component/sass/style.scss */
+  .main__why-us {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+/* line 161, ../../Desktop/price-grid-component/sass/style.scss */
+.main__why-us__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #e5eff5;
+  margin-top: 1em;
+}
+
+/* line 168, ../../Desktop/price-grid-component/sass/style.scss */
+.main__why-us__list {
+  list-style: none;
+  margin-top: 2em;
+}
+
+/* line 172, ../../Desktop/price-grid-component/sass/style.scss */
+.main__why-us__list > li {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(229, 239, 245, 0.8);
+  padding: 0.2em;
+}
+
+/*# sourceMappingURL=style.css.map */
