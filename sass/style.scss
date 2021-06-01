@@ -52,7 +52,7 @@ body {
 
 	&__community {
 		grid-area: main__community;
-		padding: 5em 2em 5em 5em;
+		padding: 5em 3em 5em 3em;
 		border-radius: 20px 20px 0 0;
 		box-shadow: 2px -2px 17px 0px $Grayish-Blue;
 
@@ -100,6 +100,7 @@ body {
 		@include only-for-mobile() {
 			font-size: 30px;
 			border-radius: 0;
+			padding: 1.5em 2em 5em 2em;
 		}
 
 		&__title {
@@ -156,6 +157,7 @@ body {
 
 		@include only-for-mobile() {
 			border-radius: 0 0 20px 20px;
+			padding: 1.5em 3.5em 5em 3.5em;
 		}
 
 		&__title {
